@@ -21,7 +21,6 @@ class Index extends React.Component {
                                 is cool <br></br>
                             </li>
                         )
-
                     })}
 
                 </ul>

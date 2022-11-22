@@ -8,7 +8,9 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 
 
-
+app.get("/pokemon/:id", (req,res)=> {
+    res.send(req.params.id)
+})
 app.get("/pokemon", (req,res) =>{
     res.render('Index', {pokemon: pokemon})
 })
@@ -16,6 +18,7 @@ app.get("/pokemon", (req,res) =>{
 app.get("/", (req,res) =>{
     res.send("Welcome to the Pokemon App!")
 })
+
 
 
 
