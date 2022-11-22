@@ -5,10 +5,12 @@ class Show extends React.Component {
         const {name,img} = this.props
         return (
             <div>
-                <h1>Show Page</h1>
+                <h3>Show Page</h3>
                 <div>
-                    <p> The {name} is awesome</p>
-                    <img src ={img +".jpg"}/>
+                    <h1>"Gotta Catch 'Em All"</h1>
+                    <h2> The {name[0].toUpperCase() + name.slice(1)} is awesome</h2>
+                    <img src ={img +".jpg"}/> <br></br>
+                    <a href = {`/pokemon`}>Go Back </a>
                 </div>
             </div>
         )
