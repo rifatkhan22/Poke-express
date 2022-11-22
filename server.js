@@ -10,7 +10,7 @@ app.engine('jsx', require('express-react-views').createEngine())
 
 
 app.get("/pokemon", (req,res) =>{
-    res.render('Index')
+    res.render('Index', {pokemon: pokemon})
 })
 
 app.get("/", (req,res) =>{
